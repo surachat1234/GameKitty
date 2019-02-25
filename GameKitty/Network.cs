@@ -24,11 +24,8 @@ namespace GameKitty
         //Used for program icon on MainForm
         public readonly static bool networkAvailable = true;
 
-        public readonly static string _latestVersionLink = "https://github.com/LovelyEclair/GameKitty/blob/master/version.txt";
+        public readonly static string _latestVersionLink = "https://raw.githubusercontent.com/LovelyEclair/GameKitty/master/version.txt";
         public readonly static string _changelogLink = "https://github.com/LovelyEclair/GameKitty/blob/master/CHANGELOG.md";
-
-        private static readonly string _noNewVersionMessage = "You already have the latest version!";
-        private static readonly string _betaVersionMessage = "You are using an experimental version!";
 
         private static string NewVersionMessage(string latestVersion)
         {
@@ -54,7 +51,7 @@ namespace GameKitty
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Message.CreateMessage(ex.Message);
             }
 
             if (!string.IsNullOrEmpty(latestVersion))
@@ -105,12 +102,16 @@ namespace GameKitty
                 }
                 else if (float.Parse(latestVersion) == Program.GetCurrentVersion())
                 {
-                    MessageBox.Show(_noNewVersionMessage, "No update available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Message.CreateMessage("No update available");
                 }
                 else
                 {
-                    MessageBox.Show(_betaVersionMessage, "No update available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Message.CreateMessage("No update available for beta");
                 }
+            }
+            else
+            {
+                Message.CreateMessage("Version text is empty!");
             }
         }
     }

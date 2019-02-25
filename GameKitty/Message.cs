@@ -11,7 +11,7 @@ namespace GameKitty
     {
         public static void CreateMessage(string message)
         {
-            MessageBox.Show(message, "GameKitty Error");
+            MessageBox.Show(message, "GameKitty - Message", MessageBoxButtons.OK);
         }
     }
 }
