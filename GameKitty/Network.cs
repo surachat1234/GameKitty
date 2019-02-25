@@ -22,7 +22,7 @@ namespace GameKitty
     public class Network
     {
         //Used for program icon on MainForm
-        public readonly static bool networkAvailable = false;
+        public readonly static bool networkAvailable = true;
 
         public readonly static string _latestVersionLink = "https://github.com/LovelyEclair/GameKitty/blob/master/version.txt";
         public readonly static string _changelogLink = "https://github.com/LovelyEclair/GameKitty/blob/master/CHANGELOG.md";
