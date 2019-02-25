@@ -62,7 +62,8 @@
             // 
             // tpanel
             // 
-            resources.ApplyResources(this.tpanel, "tpanel");
+            this.tpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tpanel.BackColor = System.Drawing.Color.LavenderBlush;
             this.tpanel.Controls.Add(this.button_ResetConfig);
             this.tpanel.Controls.Add(this.txtBitness);
@@ -70,100 +71,151 @@
             this.tpanel.Controls.Add(this.txtVersion);
             this.tpanel.Controls.Add(this.GameKittyLogo);
             this.tpanel.Controls.Add(this.button_RestartComputer);
+            this.tpanel.Location = new System.Drawing.Point(0, 41);
+            this.tpanel.Margin = new System.Windows.Forms.Padding(2);
             this.tpanel.Name = "tpanel";
+            this.tpanel.Size = new System.Drawing.Size(600, 65);
+            this.tpanel.TabIndex = 1;
             // 
             // button_ResetConfig
             // 
-            resources.ApplyResources(this.button_ResetConfig, "button_ResetConfig");
+            this.button_ResetConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_ResetConfig.BackColor = System.Drawing.Color.DodgerBlue;
             this.button_ResetConfig.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_ResetConfig.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_ResetConfig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.button_ResetConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ResetConfig.ForeColor = System.Drawing.Color.White;
+            this.button_ResetConfig.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_ResetConfig.Location = new System.Drawing.Point(431, 15);
+            this.button_ResetConfig.Margin = new System.Windows.Forms.Padding(2);
             this.button_ResetConfig.Name = "button_ResetConfig";
+            this.button_ResetConfig.Size = new System.Drawing.Size(155, 31);
+            this.button_ResetConfig.TabIndex = 56;
+            this.button_ResetConfig.Text = "Reset configuration";
             this.button_ResetConfig.UseVisualStyleBackColor = false;
             this.button_ResetConfig.Click += new System.EventHandler(this.button_ResetConfig_Click);
             // 
             // txtBitness
             // 
-            resources.ApplyResources(this.txtBitness, "txtBitness");
+            this.txtBitness.AutoSize = true;
             this.txtBitness.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBitness.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtBitness.Location = new System.Drawing.Point(68, 38);
+            this.txtBitness.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtBitness.Name = "txtBitness";
+            this.txtBitness.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtBitness.Size = new System.Drawing.Size(44, 15);
+            this.txtBitness.TabIndex = 4;
+            this.txtBitness.Text = "bitness";
             // 
             // txtOS
             // 
-            resources.ApplyResources(this.txtOS, "txtOS");
+            this.txtOS.AutoSize = true;
             this.txtOS.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtOS.Location = new System.Drawing.Point(68, 23);
+            this.txtOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtOS.Name = "txtOS";
+            this.txtOS.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtOS.Size = new System.Drawing.Size(19, 15);
+            this.txtOS.TabIndex = 3;
+            this.txtOS.Text = "os";
             // 
             // txtVersion
             // 
-            resources.ApplyResources(this.txtVersion, "txtVersion");
+            this.txtVersion.AutoSize = true;
             this.txtVersion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtVersion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtVersion.Location = new System.Drawing.Point(68, 8);
+            this.txtVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtVersion.Name = "txtVersion";
+            this.txtVersion.Size = new System.Drawing.Size(49, 15);
+            this.txtVersion.TabIndex = 1;
+            this.txtVersion.Text = "Version:";
             // 
             // GameKittyLogo
             // 
             this.GameKittyLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GameKittyLogo.Image = global::GameKitty.Properties.Resources.kitty;
-            resources.ApplyResources(this.GameKittyLogo, "GameKittyLogo");
+            this.GameKittyLogo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.GameKittyLogo.Location = new System.Drawing.Point(10, 10);
+            this.GameKittyLogo.Margin = new System.Windows.Forms.Padding(2);
             this.GameKittyLogo.Name = "GameKittyLogo";
+            this.GameKittyLogo.Size = new System.Drawing.Size(44, 43);
+            this.GameKittyLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GameKittyLogo.TabIndex = 1;
             this.GameKittyLogo.TabStop = false;
             this.GameKittyLogo.Click += new System.EventHandler(this.GameKittyLogo_Click);
             // 
             // button_RestartComputer
             // 
-            resources.ApplyResources(this.button_RestartComputer, "button_RestartComputer");
+            this.button_RestartComputer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_RestartComputer.BackColor = System.Drawing.Color.DodgerBlue;
             this.button_RestartComputer.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_RestartComputer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_RestartComputer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.button_RestartComputer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_RestartComputer.ForeColor = System.Drawing.Color.White;
+            this.button_RestartComputer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_RestartComputer.Location = new System.Drawing.Point(303, 15);
+            this.button_RestartComputer.Margin = new System.Windows.Forms.Padding(2);
             this.button_RestartComputer.Name = "button_RestartComputer";
+            this.button_RestartComputer.Size = new System.Drawing.Size(115, 31);
+            this.button_RestartComputer.TabIndex = 30;
+            this.button_RestartComputer.Text = "Restart Computer";
             this.button_RestartComputer.UseVisualStyleBackColor = false;
             this.button_RestartComputer.Click += new System.EventHandler(this.button_RestartComputer_Click);
             // 
             // defineCommandDialog
             // 
-            resources.ApplyResources(this.defineCommandDialog, "defineCommandDialog");
+            this.defineCommandDialog.Filter = "Executables [*.exe]|*.exe";
+            this.defineCommandDialog.Title = "GameKitty | Select a file...";
             // 
             // defineProgramDialog
             // 
-            resources.ApplyResources(this.defineProgramDialog, "defineProgramDialog");
+            this.defineProgramDialog.Filter = "Executables [*.exe]|*.exe";
+            this.defineProgramDialog.Title = "GameKitty | Select a file...";
             // 
             // defineFolderDialog
             // 
-            resources.ApplyResources(this.defineFolderDialog, "defineFolderDialog");
+            this.defineFolderDialog.Description = "GameKitty | Select a folder...";
             // 
             // defineFileDialog
             // 
-            resources.ApplyResources(this.defineFileDialog, "defineFileDialog");
+            this.defineFileDialog.Filter = "All files [*.*]|*.*";
+            this.defineFileDialog.Title = "GameKitty | Select a file...";
             // 
             // DefineProgramIconDialog
             // 
-            resources.ApplyResources(this.DefineProgramIconDialog, "DefineProgramIconDialog");
+            this.DefineProgramIconDialog.Filter = "Icon [*.ico]|*.ico|Executable [*.exe]|*.exe";
+            this.DefineProgramIconDialog.Title = "GameKitty | Select an icon or program...";
             // 
             // DefineFolderIconDialog
             // 
-            resources.ApplyResources(this.DefineFolderIconDialog, "DefineFolderIconDialog");
+            this.DefineFolderIconDialog.Filter = "Icon [*.ico]|*.ico|Executable [*.exe]|*.exe";
+            this.DefineFolderIconDialog.Title = "GameKitty | Select an icon or program...";
             // 
             // DefineURLIconDialog
             // 
-            resources.ApplyResources(this.DefineURLIconDialog, "DefineURLIconDialog");
+            this.DefineURLIconDialog.Filter = "Icon [*.ico]|*.ico|Executable [*.exe]|*.exe";
+            this.DefineURLIconDialog.Title = "GameKitty | Select an icon or program...";
             // 
             // DefineFileIconDialog
             // 
-            resources.ApplyResources(this.DefineFileIconDialog, "DefineFileIconDialog");
+            this.DefineFileIconDialog.Filter = "Icon [*.ico]|*.ico|Executable [*.exe]|*.exe";
+            this.DefineFileIconDialog.Title = "GameKitty | Select a file...";
             // 
             // DefineCommandIconDialog
             // 
-            resources.ApplyResources(this.DefineCommandIconDialog, "DefineCommandIconDialog");
+            this.DefineCommandIconDialog.Filter = "Icon [*.ico]|*.ico|Executable [*.exe]|*.exe";
+            this.DefineCommandIconDialog.Title = "GameKitty | Select an icon or program...";
             // 
             // toolStrip1
             // 
             this.toolStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.toolStrip1.BackColor = System.Drawing.Color.LavenderBlush;
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.toolStrip1.GripMargin = new System.Windows.Forms.Padding(4);
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -171,32 +223,44 @@
             this.button_CloseGameKitty,
             this.button_MinimizeGameKitty,
             this.label_GameKitty});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(5);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.toolStrip1.ShowItemToolTips = false;
+            this.toolStrip1.Size = new System.Drawing.Size(600, 41);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // button_CloseGameKitty
             // 
             this.button_CloseGameKitty.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.button_CloseGameKitty.Image = global::GameKitty.Properties.Resources.close_window;
-            resources.ApplyResources(this.button_CloseGameKitty, "button_CloseGameKitty");
+            this.button_CloseGameKitty.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.button_CloseGameKitty.Name = "button_CloseGameKitty";
+            this.button_CloseGameKitty.Size = new System.Drawing.Size(28, 28);
+            this.button_CloseGameKitty.Text = "CloseButton";
             this.button_CloseGameKitty.Click += new System.EventHandler(this.button_CloseGameKitty_Click);
             // 
             // button_MinimizeGameKitty
             // 
             this.button_MinimizeGameKitty.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.button_MinimizeGameKitty.Image = global::GameKitty.Properties.Resources.minimize_window;
-            resources.ApplyResources(this.button_MinimizeGameKitty, "button_MinimizeGameKitty");
+            this.button_MinimizeGameKitty.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.button_MinimizeGameKitty.Name = "button_MinimizeGameKitty";
+            this.button_MinimizeGameKitty.Size = new System.Drawing.Size(28, 28);
+            this.button_MinimizeGameKitty.Text = "MinimizeButton";
             this.button_MinimizeGameKitty.Click += new System.EventHandler(this.button_MinimizeGameKitty_Click);
             // 
             // label_GameKitty
             // 
             this.label_GameKitty.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            resources.ApplyResources(this.label_GameKitty, "label_GameKitty");
+            this.label_GameKitty.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label_GameKitty.ForeColor = System.Drawing.Color.Tomato;
             this.label_GameKitty.Name = "label_GameKitty";
+            this.label_GameKitty.Size = new System.Drawing.Size(103, 28);
+            this.label_GameKitty.Text = "GameKitty";
             // 
             // button_OpenUniversal
             // 
@@ -204,9 +268,15 @@
             this.button_OpenUniversal.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_OpenUniversal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_OpenUniversal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.button_OpenUniversal, "button_OpenUniversal");
+            this.button_OpenUniversal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenUniversal.ForeColor = System.Drawing.Color.White;
+            this.button_OpenUniversal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenUniversal.Location = new System.Drawing.Point(215, 150);
+            this.button_OpenUniversal.Margin = new System.Windows.Forms.Padding(2);
             this.button_OpenUniversal.Name = "button_OpenUniversal";
+            this.button_OpenUniversal.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenUniversal.TabIndex = 50;
+            this.button_OpenUniversal.Text = "UNIVERSAL";
             this.button_OpenUniversal.UseVisualStyleBackColor = false;
             this.button_OpenUniversal.Click += new System.EventHandler(this.button_OpenUniversal_Click);
             // 
@@ -216,9 +286,15 @@
             this.button_OpenWindows10.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_OpenWindows10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_OpenWindows10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.button_OpenWindows10, "button_OpenWindows10");
+            this.button_OpenWindows10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenWindows10.ForeColor = System.Drawing.Color.White;
+            this.button_OpenWindows10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenWindows10.Location = new System.Drawing.Point(215, 350);
+            this.button_OpenWindows10.Margin = new System.Windows.Forms.Padding(2);
             this.button_OpenWindows10.Name = "button_OpenWindows10";
+            this.button_OpenWindows10.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenWindows10.TabIndex = 51;
+            this.button_OpenWindows10.Text = "WINDOWS 10";
             this.button_OpenWindows10.UseVisualStyleBackColor = false;
             this.button_OpenWindows10.Click += new System.EventHandler(this.button_OpenWindows10_Click);
             // 
@@ -228,9 +304,15 @@
             this.button_OpenModernApps.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_OpenModernApps.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_OpenModernApps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.button_OpenModernApps, "button_OpenModernApps");
+            this.button_OpenModernApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenModernApps.ForeColor = System.Drawing.Color.White;
+            this.button_OpenModernApps.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenModernApps.Location = new System.Drawing.Point(215, 250);
+            this.button_OpenModernApps.Margin = new System.Windows.Forms.Padding(2);
             this.button_OpenModernApps.Name = "button_OpenModernApps";
+            this.button_OpenModernApps.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenModernApps.TabIndex = 52;
+            this.button_OpenModernApps.Text = "MODERN APPS";
             this.button_OpenModernApps.UseVisualStyleBackColor = false;
             this.button_OpenModernApps.Click += new System.EventHandler(this.button_OpenModernApps_Click);
             // 
@@ -240,9 +322,15 @@
             this.button_OpenCleaner.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_OpenCleaner.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_OpenCleaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.button_OpenCleaner, "button_OpenCleaner");
+            this.button_OpenCleaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenCleaner.ForeColor = System.Drawing.Color.White;
+            this.button_OpenCleaner.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenCleaner.Location = new System.Drawing.Point(11, 250);
+            this.button_OpenCleaner.Margin = new System.Windows.Forms.Padding(2);
             this.button_OpenCleaner.Name = "button_OpenCleaner";
+            this.button_OpenCleaner.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenCleaner.TabIndex = 53;
+            this.button_OpenCleaner.Text = "CLEANER";
             this.button_OpenCleaner.UseVisualStyleBackColor = false;
             this.button_OpenCleaner.Click += new System.EventHandler(this.button_OpenCleaner_Click);
             // 
@@ -252,23 +340,36 @@
             this.button_OpenRegistry.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button_OpenRegistry.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
             this.button_OpenRegistry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.button_OpenRegistry, "button_OpenRegistry");
+            this.button_OpenRegistry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenRegistry.ForeColor = System.Drawing.Color.White;
+            this.button_OpenRegistry.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenRegistry.Location = new System.Drawing.Point(419, 250);
+            this.button_OpenRegistry.Margin = new System.Windows.Forms.Padding(2);
             this.button_OpenRegistry.Name = "button_OpenRegistry";
+            this.button_OpenRegistry.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenRegistry.TabIndex = 54;
+            this.button_OpenRegistry.Text = "REGISTRY";
             this.button_OpenRegistry.UseVisualStyleBackColor = false;
             this.button_OpenRegistry.Click += new System.EventHandler(this.button_OpenRegistry_Click);
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(11, 401);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 15);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Copyright© 2019 - Created by Throne Interactive";
             // 
             // MainForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.ClientSize = new System.Drawing.Size(600, 425);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_OpenRegistry);
@@ -279,11 +380,16 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tpanel);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "GameKitty";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.tpanel.ResumeLayout(false);
