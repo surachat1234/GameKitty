@@ -86,9 +86,9 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(107, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 15);
+            this.label2.Size = new System.Drawing.Size(173, 15);
             this.label2.TabIndex = 40;
-            this.label2.Text = "created by Throne Interactive";
+            this.label2.Text = "created by TheElvenTale Games";
             // 
             // button_opt_CheckUpdate
             // 
@@ -132,9 +132,9 @@
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(107, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(207, 15);
+            this.label3.Size = new System.Drawing.Size(218, 15);
             this.label3.TabIndex = 60;
-            this.label3.Text = "Copyright© 2019 - Throne Interactive";
+            this.label3.Text = "Copyright© 2019 - TheElvenTale Games";
             // 
             // AboutForm
             // 

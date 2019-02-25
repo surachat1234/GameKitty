@@ -55,6 +55,7 @@
             this.button_OpenCleaner = new System.Windows.Forms.Button();
             this.button_OpenRegistry = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GameKittyLogo)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -360,9 +361,19 @@
             this.label1.Location = new System.Drawing.Point(11, 401);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 15);
+            this.label1.Size = new System.Drawing.Size(277, 15);
             this.label1.TabIndex = 55;
-            this.label1.Text = "Copyright© 2019 - Created by Throne Interactive";
+            this.label1.Text = "Copyright© 2019 - Created by TheElvenTale Games";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(341, 401);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(248, 15);
+            this.linkLabel1.TabIndex = 56;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.patreon.com/theelventalegames";
             // 
             // MainForm
             // 
@@ -371,6 +382,7 @@
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(600, 425);
             this.ControlBox = false;
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_OpenRegistry);
             this.Controls.Add(this.button_OpenCleaner);
@@ -430,6 +442,7 @@
         private System.Windows.Forms.Button button_OpenCleaner;
         private System.Windows.Forms.Button button_OpenRegistry;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

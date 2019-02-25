@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("GameKitty")]
 [assembly: AssemblyDescription("OS performance enchancer for gaming")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Throne Interactive")]
+[assembly: AssemblyCompany("TheElvenTale Games")]
 [assembly: AssemblyProduct("GameKitty")]
-[assembly: AssemblyCopyright("Copyright© 2019 - Throne Interactive - All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright© 2019 - TheElvenTale Games - All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

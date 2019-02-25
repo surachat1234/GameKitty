@@ -11,3 +11,10 @@
 * .NET Framework 4.7.2
 * Prepared for Windows 10
 * It can run on Windows 7 and Windows 8.1 but is not supported by me.
+* Needs Visual Studio 2017 15.9 or later (maybe works older versions)
+
+
+## Do you want to support me? ##
+Why aren't you visit my patreon?
+
+[![Become my patron on my patreon!](https://c5.patreon.com/external/logo/downloads_logomark_color_on_white@2x.png)](https://www.patreon.com/theelventalegames)
