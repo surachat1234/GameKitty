@@ -13,7 +13,7 @@
 * Needs Visual Studio 2017 15.9 or later (maybe works older versions)
 
 ## Releases ##
-If you don't want to compile just use [!release (https://github.com/LovelyEclair/GameKitty/releases) page.
+If you don't want to compile just use [release](https://github.com/LovelyEclair/GameKitty/releases) page.
 
 ## Do you want to support me? ##
 Why aren't you visit my patreon?
