@@ -24,20 +24,20 @@ namespace GameKitty
         //Used for program icon on MainForm
         public readonly static bool networkAvailable = false;
 
-        public readonly static string _latestVersionLink = "https://raw.githubusercontent.com/hellzerg/GameKitty/master/version.txt";
-        public readonly static string _changelogLink = "https://github.com/hellzerg/GameKitty/blob/master/CHANGELOG.md";
+        public readonly static string _latestVersionLink = "https://github.com/LovelyEclair/GameKitty/blob/master/version.txt";
+        public readonly static string _changelogLink = "https://github.com/LovelyEclair/GameKitty/blob/master/CHANGELOG.md";
 
         private static readonly string _noNewVersionMessage = "You already have the latest version!";
         private static readonly string _betaVersionMessage = "You are using an experimental version!";
 
         private static string NewVersionMessage(string latestVersion)
         {
-            return string.Format("New version is available!\n\nLatest version: {0}\nCurrent version: {1}\n\nDo you want to download it now?", latestVersion, Program.GetCurrentVersionTostring());
+            return string.Format("New version is available!\n\nLatest version: {0}\nCurrent version: {1}\n\nDo you want to update?", latestVersion, Program.GetCurrentVersionTostring());
         }
 
         private static string NewDownloadLink(string latestVersion)
         {
-            return string.Format("https://github.com/hellzerg/GameKitty/releases/download/{0}/GameKitty-{0}.exe", latestVersion);
+            return string.Format("https://github.com/LovelyEclair/GameKitty/releases/download/{0}/GameKitty-{0}.exe", latestVersion);
         }
 
         public static void CheckForUpdate()
