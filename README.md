@@ -5,6 +5,7 @@
 * Turn off features not preferred by most people
 * Disk clean-up
 * Registry fix-up 
+* RAM defragment
 
 ## Compatibility ##
 * .NET Framework 4.7.2
