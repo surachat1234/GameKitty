@@ -112,5 +112,11 @@ namespace GameKitty
             ContentRegistry cr = new ContentRegistry();
             cr.Show();
         }
+
+        private void button_OpenDefragment_Click(object sender, EventArgs e)
+        {
+            ContentDefragment cd = new ContentDefragment();
+            cd.Show();
+        }
     }
 }

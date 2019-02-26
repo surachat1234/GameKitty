@@ -156,6 +156,16 @@ namespace GameKitty.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] EmptyStandbyList {
+            get {
+                object obj = ResourceManager.GetObject("EmptyStandbyList", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Windows Registry Editor Version 5.00
         ///
         ///[HKEY_CURRENT_USER\Software\Policies\microsoft\office\16.0\osm\preventedapplications]

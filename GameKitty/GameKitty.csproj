@@ -100,6 +100,12 @@
     <Compile Include="ContentModernApps.Designer.cs">
       <DependentUpon>ContentModernApps.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContentDefragment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentDefragment.Designer.cs">
+      <DependentUpon>ContentDefragment.cs</DependentUpon>
+    </Compile>
     <Compile Include="ContentWindows10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContentModernApps.resx">
       <DependentUpon>ContentModernApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentDefragment.resx">
+      <DependentUpon>ContentDefragment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContentWindows10.resx">
       <DependentUpon>ContentWindows10.cs</DependentUpon>
@@ -256,6 +265,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EmptyStandbyList.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

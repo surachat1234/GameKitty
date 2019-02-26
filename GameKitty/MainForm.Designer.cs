@@ -56,6 +56,7 @@
             this.button_OpenRegistry = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button_OpenDefragment = new System.Windows.Forms.Button();
             this.tpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GameKittyLogo)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -375,6 +376,24 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://www.patreon.com/theelventalegames";
             // 
+            // button_OpenDefragment
+            // 
+            this.button_OpenDefragment.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button_OpenDefragment.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button_OpenDefragment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.button_OpenDefragment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.button_OpenDefragment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_OpenDefragment.ForeColor = System.Drawing.Color.White;
+            this.button_OpenDefragment.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_OpenDefragment.Location = new System.Drawing.Point(11, 300);
+            this.button_OpenDefragment.Margin = new System.Windows.Forms.Padding(2);
+            this.button_OpenDefragment.Name = "button_OpenDefragment";
+            this.button_OpenDefragment.Size = new System.Drawing.Size(170, 32);
+            this.button_OpenDefragment.TabIndex = 57;
+            this.button_OpenDefragment.Text = "DEFRAGMENT";
+            this.button_OpenDefragment.UseVisualStyleBackColor = false;
+            this.button_OpenDefragment.Click += new System.EventHandler(this.button_OpenDefragment_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -382,6 +401,7 @@
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(600, 425);
             this.ControlBox = false;
+            this.Controls.Add(this.button_OpenDefragment);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_OpenRegistry);
@@ -443,6 +463,7 @@
         private System.Windows.Forms.Button button_OpenRegistry;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button_OpenDefragment;
     }
 }
 
